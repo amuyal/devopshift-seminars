@@ -13,7 +13,7 @@ jobs:
     - name: Set up Python 3.10
       uses: actions/setup-python@v2
       with:
-        python-version: python:3.8-slim
+        python-version: python:3.8.12
     - name: run Dockerfile
       run: |
             docker build -t devopshift-seminars/docker/day_2/12factor/multistage_build/ . 
