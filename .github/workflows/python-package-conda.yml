@@ -10,10 +10,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.11.0-alpha.4
+    - name: Set up Python 3.10.2
       uses: actions/setup-python@v2
       with:
-        python-version: python:3.11.0-alpha.4
+        python-version: python:3.10.2
     - name: run Dockerfile
       run: |
             docker build -t devopshift-seminars/docker/day_2/12factor/multistage_build/ . 
